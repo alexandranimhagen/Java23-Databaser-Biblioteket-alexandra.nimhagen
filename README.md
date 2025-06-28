@@ -1,28 +1,45 @@
+Databaser – Bibliotekssystem
 
-Riktlinjer för att köra projektet:
-1. Förberedelser
-- Installera senaste JDK
-- Installera Maven
-- Installera MySQL-servern och konfigurera den
-- Ladda ner och installera JavaFX SDK
+A Java library management system interacting with a relational database. Developed as part of a course on databases, it demonstrates CRUD operations, JDBC usage and structured data access.
 
-2. Hämta Källkoden
-- Installera Git och klona projektet:
-- git clone https://github.com/MH-GRIT/jd23-databases-biblioteket-alexandranimhagen.git
-- cd https://github.com/MH-GRIT/jd23-databases-biblioteket-alexandranimhagen.git
+Features
 
-3. Databasinställningar
-- Importera Databasdump: mysql -u root -p < librarydb_dump.sql
+- Add, update, delete, and list books and users
+- Search functionality (by title, author, ISBN etc.)
+- Borrowing and return actions with status tracking
+- Input validation and error handling
+- Command-line interface for user interaction
 
-5. Bygg och kör projektet
-- Bygg med Maven: mvn clean install
-- Kör med Maven: mvn javafx:run
+Technologies Used
 
-7. Använd en utvecklingsmiljö (IDE)
-- IntelliJ IDEA: Installera och importera projektet som ett Maven-projekt
-- Konfigurera JavaFX:
-- Lägg till JavaFX SDK som bibliotek.
-- Under körkonfiguration, lägg till VM options: --module-path /path/to/javafx-sdk-16/lib --add-modules javafx.controls,javafx.fxml
-- 
-8. Kör projektet i IDE
-- Högerklicka på MainApp.java och välj Run 'MainApp.main()'.
+- Java  
+- JDBC (Java Database Connectivity)  
+- Relational database (e.g., MySQL, PostgreSQL or SQLite)  
+- SQL scripts for table creation  
+- Object-Oriented Programming (OOP)
+
+How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/alexandranimhagen/Java23-Databaser-Biblioteket-alexandra.nimhagen.git
+Set up a database using provided SQL scripts (e.g. schema.sql)
+
+Configure database connection in the code (DBConfig.java or similar)
+
+Open project in your Java IDE (IntelliJ, Eclipse etc.)
+
+Run the main class (e.g. LibraryApp.java) and interact via console
+
+What I Learned
+This project helped me:
+
+Work with relational databases using JDBC
+
+Design and execute SQL queries for CRUD operations
+
+Handle data mapping between database and Java objects
+
+Structure application code with separation of concerns
+
+This application is part of my Java course and demonstrates fundamental database interaction and backend logic.
